@@ -153,8 +153,21 @@ button {
   border-radius: 10px;
 }
 
+button:hover {
+  background-color: #f5f2d1;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #dddabc;
+}
+
 .login {
   color: var(--yellow);
+}
+
+.login:active {
+  color: #dddabc;
 }
 
 /* Form control styling */
@@ -170,10 +183,22 @@ input {
   position: relative;
 }
   
-span {
+input + label {
   font-size: calc(var(--subtext-size) - 5px);
   position: absolute;
   top: 0;
   left: 0;
   padding: 8px 10px;
+  transition: transform 300ms; /* Smooth transition for transformation */
+  transform-origin: left; 
+}
+
+/* Pseudo-classes styling */
+input:focus + label,
+input:not(:placeholder-shown) + label
+{
+  transform: scale(0.8) translateY(-35px);
+  background-color: #ece9c6c4;
+  border-radius: 10px;
+  
 }
