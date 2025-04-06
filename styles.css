@@ -29,7 +29,7 @@ img {
   --black: #131313;
   --pink: #CDA3D9;
   --light-green: #B2D996;
-  --yellow: #D9D5A3;
+  --yellow: #ECE9C6;
   --font-family: "Chicle", serif;
   --label-text-size: 16px;
   --call-to-action-text-size: 40px;
@@ -51,8 +51,8 @@ body {
 }
 
 .right-side {
-  background-image: linear-gradient(to top right, var(--pink), var(--light-green));
-
+  /* background-image: linear-gradient(to top right, var(--pink), var(--light-green)); */
+  background-image: linear-gradient(to top right, var(--light-blue), var(--pink));
   height: 100vh;
   width: 60vw;
 }
@@ -106,7 +106,11 @@ img {
 
 div.hero-text {
   line-height: 1.5;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  margin-bottom: auto;
 }
 
 .right-side > * {
@@ -114,15 +118,17 @@ div.hero-text {
 }
 
 form {
-  background-color: var(--yellow);
+  background-color: rgba(255, 255, 255, 0.3);
   display: flex;
   flex-direction: column;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .form-container {
+  margin-top: 20px;
   padding-left: 5vw;
   display: flex;
+  gap: 5vw;
 }
 
 .form-left, .form-right {
@@ -141,7 +147,19 @@ form {
 button {
   margin-bottom: 15px;
   padding: 10px 50px;
-  background-color: var(--light-blue);
+  background-color: var(--yellow);
   color: black;
+  border-radius: 10px;
+}
+
+.login {
+  color: var(--yellow);
+}
+
+/* Form control styling */
+input {
+  width: 15vw;
+  height: 35px;
+  margin-bottom: 20px;
   border-radius: 10px;
 }
