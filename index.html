@@ -16,33 +16,41 @@
   </div>
 
   <div class="right-side">
-    <h2>Keep smiling</h2>
-    <p>Sign up to spread good vibes</p>
 
+    <div class="hero-text">
+      <p>Keep smiling</p>
+      <p>Sign up to spread good vibes</p>
+    </div>
+      
     <form action="#" id="myForm">
-      <h1>Let's do this!</h1>
+      <p class="hero-text">Let's do this!</p>
 
-      <label for="first-name">FIRST NAME</label>
-      <input type="text" name="first-name" id="first-name">
+      <div class="form-container">
+        <div class="form-left">
+          <label for="first-name">FIRST NAME</label>
+          <input type="text" name="first-name" id="first-name">
+          <label for="email">EMAIL</label>
+          <input type="email" name="user-email" id="email">
+          <label for="password-1">PASSWORD</label>
+          <input type="password" name="user-pwc" id="password-1">
+        </div>
 
-      <label for="email">EMAIL</label>
-      <input type="email" name="user-email" id="email">
-
-      <label for="password-1">PASSWORD</label>
-      <input type="password" name="user-pwc" id="password-1">
-
-      <label for="last-name">LAST NAME</label>
-      <input type="text" name="last-name" id="last-name">
-
-      <label for="phone">LAST NAME</label>
-      <input type="tel" name="tel-num" id="phone">
-
-      <label for="password-2">LAST NAME</label>
-      <input type="password" id="password-2">
+        <div class="form-right">
+          <label for="last-name">LAST NAME</label>
+          <input type="text" name="last-name" id="last-name">
+          <label for="phone">LAST NAME</label>
+          <input type="tel" name="tel-num" id="phone">
+          <label for="password-2">LAST NAME</label>
+          <input type="password" id="password-2">
+        </div>
+      </div>
     </form>
 
-    <button type="submit" form="myForm"> Create Account</button>
-    <p>Already have an account? <span class="login">Log in</span></p>
+    <div class="btn">
+      <button type="submit" form="myForm"> Create Account</button>
+      <p class="account">Already have an account? <a href="#" class="login">Log in</a></p>
+    </div>
+    
   </div>
 </body>
 </html>

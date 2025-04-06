@@ -28,8 +28,13 @@ img {
   --white: #ffffff;
   --black: #131313;
   --pink: #CDA3D9;
-  --baby-blue: #B2D996;
+  --light-green: #B2D996;
+  --yellow: #D9D5A3;
   --font-family: "Chicle", serif;
+  --label-text-size: 16px;
+  --call-to-action-text-size: 40px;
+  --subtext-size: 24px;
+  --light-blue: #ACCFE3;
 }
 
 body {
@@ -40,13 +45,14 @@ body {
 
 .left-side {
   background-image: linear-gradient(to bottom right, var(--grey), var(--black));
+
   height: 100vh;
   width: 40vw;
 }
 
 .right-side {
-  background-color: #A3A7D9;
-  background-image: linear-gradient(to top right, var(--pink), var(--baby-blue));
+  background-image: linear-gradient(to top right, var(--pink), var(--light-green));
+
   height: 100vh;
   width: 60vw;
 }
@@ -65,22 +71,77 @@ img {
 
 .logo-name {
   font-family: var(--font-family);
+  color:       var(--white);
+
   font-size: 60px;
   font-weight: bolder;
   margin-right: auto;
   margin-left: 1vw;
-  color: var(--white);
 }
 
 .slogan {
   font-family: var(--font-family);
-  font-size: 30px;
-  color: var(--white);
+  color:       var(--white);
+  font-size:   var(--call-to-action-text-size);
 }
 
 .photo-credits {
-  margin-bottom: 10px;
+  margin-bottom: var(--call-to-action-text-size);
+  font-family:   var(--font-family);
+  font-size:     var(--label-text-size);
+  color:         var(--white);
+}
+
+/* Right side formatting (2)*/
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-text {
+  margin-left: 5vw;
+  font-size: var(--call-to-action-text-size);
+}
+
+div.hero-text {
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.right-side > * {
   font-family: var(--font-family);
-  font-size: 16px;
-  color: var(--white);
+}
+
+form {
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0;
+}
+
+.form-container {
+  padding-left: 5vw;
+  display: flex;
+}
+
+.form-left, .form-right {
+  display: flex;
+  flex-direction: column;
+}
+
+/* btn section (2)*/
+
+.btn {
+  margin-top: 30px;
+  margin-left: 5vw;
+  font-size: var(--subtext-size);
+}
+
+button {
+  margin-bottom: 15px;
+  padding: 10px 50px;
+  background-color: var(--light-blue);
+  color: black;
+  border-radius: 10px;
 }
