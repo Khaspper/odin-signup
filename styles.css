@@ -134,6 +134,7 @@ form {
 .form-left, .form-right {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 /* btn section (2)*/
@@ -158,8 +159,21 @@ button {
 
 /* Form control styling */
 input {
-  width: 15vw;
+  width: 13vw;
+  padding-left: 10px;
   height: 35px;
   margin-bottom: 20px;
   border-radius: 10px;
+}
+
+.input-container {
+  position: relative;
+}
+  
+span {
+  font-size: calc(var(--subtext-size) - 5px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 10px;
 }
