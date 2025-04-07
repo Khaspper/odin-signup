@@ -28,17 +28,35 @@
       <div class="form-container">
         <div class="form-left">
           <div class="input-container">
-            <input type="text" name="first-name" id="first-name" placeholder=" ">
+            <input type="text" 
+            name="first-name" 
+            id="first-name" 
+            placeholder=" " 
+
+            required
+          >
             <label for="first-name">FIRST NAME</label>
           </div>
 
           <div class="input-container">
-            <input type="email" name="user-email" id="email" placeholder=" ">
+            <input type="email" 
+            name="user-email" 
+            id="email" 
+            placeholder=" " 
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required 
+          >
             <label for="email">EMAIL</label>
           </div>
 
           <div class="input-container">
-            <input type="password" name="user-pwc" id="password-1" placeholder=" ">
+            <input type="password" 
+            name="user-pwc" 
+            id="password-1" 
+            placeholder=" " 
+            pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{8,}$"
+            required
+          >
             <label for="password-1">PASSWORD</label>
           </div>
 
@@ -46,17 +64,34 @@
 
         <div class="form-right">
           <div class="input-container">
-            <input type="text" name="last-name" id="last-name" placeholder=" ">
+            <input type="text" 
+            name="last-name" 
+            id="last-name" 
+            placeholder=" " 
+
+            required
+          >
             <label for="last-name">LAST NAME</label>
           </div>
 
           <div class="input-container">
-            <input type="tel" name="tel-num" id="phone" placeholder=" ">
+            <input type="tel" 
+            name="tel-num" 
+            id="phone" 
+            placeholder=" " 
+            pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
+            required
+          >
             <label for="phone">PHONE</label>
           </div>
           
           <div class="input-container">
-            <input type="password" id="password-2" placeholder=" ">
+            <input type="password" 
+            id="password-2" 
+            placeholder=" " 
+            pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{8,}$"
+            required
+          >
             <label for="password-2">CONFIRM PASSWORD</label>
           </div>
         </div>
