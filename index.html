@@ -22,7 +22,7 @@
       <p>Sign up to spread good vibes</p>
     </div>
       
-    <form action="#" id="myForm">
+    <form action="#" id="myForm" novalidate>
       <p class="hero-text">Let's do this!</p>
 
       <div class="form-container">
@@ -36,6 +36,7 @@
             required
           >
             <label for="first-name">FIRST NAME</label>
+            <span class="error" aria-live="polite"></span>
           </div>
 
           <div class="input-container">
@@ -43,10 +44,11 @@
             name="user-email" 
             id="email" 
             placeholder=" " 
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            pattern="^.+@.+$$"
             required 
           >
             <label for="email">EMAIL</label>
+            <span class="error" aria-live="polite"></span>
           </div>
 
           <div class="input-container">
@@ -58,6 +60,7 @@
             required
           >
             <label for="password-1">PASSWORD</label>
+            <span class="error" aria-live="polite"></span>
           </div>
 
         </div>
@@ -72,6 +75,7 @@
             required
           >
             <label for="last-name">LAST NAME</label>
+            <span class="error" aria-live="polite"></span>
           </div>
 
           <div class="input-container">
@@ -83,6 +87,7 @@
             required
           >
             <label for="phone">PHONE</label>
+            <span class="error" aria-live="polite"></span>
           </div>
           
           <div class="input-container">
@@ -93,6 +98,7 @@
             required
           >
             <label for="password-2">CONFIRM PASSWORD</label>
+            <span class="error" aria-live="polite"></span>
           </div>
         </div>
       </div>
