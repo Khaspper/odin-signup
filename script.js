@@ -6,6 +6,7 @@ form.addEventListener('submit', (event) => {
   for (let i = 0; i < inputs.length; i++) {
     if (inputs[i].validity.valid) {
       errorMessage[i].textContent = "";
+      inputs[i].classList.remove('invalid')
     }
     else if (inputs[i].id === 'password-2' && !inputs[i].validity.valueMissing) {
       let match = checkPassword(inputs[i], errorMessage[i]);
@@ -22,6 +23,7 @@ form.addEventListener('submit', (event) => {
 
 function showError(input, span) {
   message = input.validationMessage;
+  input.classList.add('invalid');
 
   if (input.type == 'email' && input.validity.typeMismatch) {
     message = "Missing an '@' in the email";
